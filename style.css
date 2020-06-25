@@ -1,0 +1,143 @@
+:root {
+  --card1-color: hsl(180, 62%, 55%);
+  --card2-color: hsl(0, 78%, 62%);
+  --card3-color: hsl(34, 97%, 64%);
+  --card4-color: hsl(212, 86%, 64%);
+  --vdblue-color: hsl(234, 12%, 34%);
+  --grayblue-color: hsl(229, 6%, 66%);
+  --lightgrey-color: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+}
+
+header {
+  text-align: center;
+  margin: 5rem 4rem;
+}
+.top {
+  font-size: 1.9rem;
+  font-weight: 200;
+  color: var(--grayblue-color);
+}
+
+header h1 {
+  font-weight: 600;
+  color: var(--vdblue-color);
+}
+
+header .p {
+  font-size: 1.1rem;
+  padding: 1.2rem 0.4rem;
+  color: var(--grayblue-color);
+}
+
+#cards {
+  margin: 0 0.3rem 2rem 0.3rem;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px transparent solid;
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 1px 5px 15px 1px var(--grayblue-color);
+  border-radius: 5px;
+  height: 254px;
+}
+.card h2 {
+  color: var(--vdblue-color);
+  padding-bottom: 0.5rem;
+}
+.card p {
+  color: var(--grayblue-color);
+}
+.card img {
+  align-self: flex-end;
+  padding-top: 2rem;
+  transition: transform 0.3s;
+}
+.card img:hover {
+  transform: scale(1.2);
+}
+
+.card-1 {
+  border-top: 4px var(--card1-color) solid;
+}
+.card-2 {
+  border-top: 4px var(--card2-color) solid;
+}
+.card-3 {
+  border-top: 4px var(--card3-color) solid;
+}
+.card-4 {
+  border-top: 4px var(--card4-color) solid;
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+  header h1,
+  .top {
+    font-size: 2.5rem;
+  }
+  header .p {
+    max-width: 40rem;
+    display: inline-block;
+  }
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    max-width: 1440px;
+    margin: 1rem 2rem;
+    grid-gap: 1rem;
+  }
+  .card-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .card-1,
+  .card-4 {
+    grid-row: 1 / 3;
+    height: 254px;
+    align-self: center;
+  }
+  .card {
+    width: 400px;
+  }
+}
+@media (min-width: 660px) and (max-width: 900px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin: 0 1rem;
+  }
+  .card {
+    width: auto;
+  }
+}
