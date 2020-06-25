@@ -137,6 +137,7 @@ header .p {
   }
   .card {
     margin: 0;
+    max-width: 430px;
   }
 }
 @media (min-width: 660px) and (max-width: 900px) {
