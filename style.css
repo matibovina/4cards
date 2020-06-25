@@ -108,8 +108,9 @@ header .p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
     /* flex-wrap: wrap; */
     padding: 1rem 1rem;
     max-width: 1440px;
@@ -128,9 +129,14 @@ header .p {
     height: 254px;
     align-self: center;
   }
+  .card-1 {
+    justify-self: end;
+  }
+  .card-4 {
+    justify-self: start;
+  }
   .card {
     margin: 0;
-    justify-content: center;
   }
 }
 @media (min-width: 660px) and (max-width: 900px) {
