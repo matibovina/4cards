@@ -111,7 +111,7 @@ header .p {
     flex-wrap: wrap;
     padding: 1rem 1rem;
     max-width: 1440px;
-    margin: 1rem 2rem;
+    margin: 1rem auto;
     grid-gap: 1rem;
   }
   .card-3 {
