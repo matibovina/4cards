@@ -93,7 +93,7 @@ header .p {
 
 @media only screen and (min-width: 900px) {
   header {
-    margin: 2rem 7rem 0 7rem;
+    margin: 2rem auto 0 auto;
   }
   header h1,
   .top {
@@ -107,10 +107,12 @@ header .p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+    /* flex-wrap: wrap; */
     padding: 1rem 1rem;
     max-width: 1440px;
-    margin: 1rem auto;
+    margin: 0 auto;
     grid-gap: 1rem;
   }
   .card-3 {
@@ -126,7 +128,8 @@ header .p {
     align-self: center;
   }
   .card {
-    width: 400px;
+    margin: 0;
+    justify-content: center;
   }
 }
 @media (min-width: 660px) and (max-width: 900px) {
