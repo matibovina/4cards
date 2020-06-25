@@ -93,7 +93,7 @@ header .p {
 
 @media only screen and (min-width: 900px) {
   header {
-    margin: 2rem auto 0 auto;
+    margin: 2rem 7rem 0 7rem;
   }
   header h1,
   .top {
