@@ -129,15 +129,18 @@ header .p {
     height: 254px;
     align-self: center;
   }
+
   .card-1 {
     justify-self: end;
+    transform: translateX(8%);
   }
   .card-4 {
     justify-self: start;
+    transform: translateX(-8%);
   }
   .card {
     margin: 0;
-    width: 411px;
+    minwidth: 430px;
   }
 }
 @media (min-width: 660px) and (max-width: 900px) {
