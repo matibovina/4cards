@@ -132,11 +132,11 @@ header .p {
 
   .card-1 {
     justify-self: end;
-    transform: translateX(8%);
+    transform: translateX(4%);
   }
   .card-4 {
     justify-self: start;
-    transform: translateX(-8%);
+    transform: translateX(-4%);
   }
   .card {
     margin: 0;
